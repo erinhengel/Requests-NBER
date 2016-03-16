@@ -1,7 +1,7 @@
 Requests-NBER
 =============
 
-Requests-NBER is a custom `Requests <http://requests.readthedocs.org/en/latest/>`_ class to log onto `NBER.org <https://www.nber.org>`_, the website of the American Economic Association.
+Requests-NBER is a custom `Requests <http://requests.readthedocs.org/en/latest/>`_ class to log onto `NBER.org <https://www.nber.org>`_, the website of the National Bureau of Economic Research.
 
 
 Installation
