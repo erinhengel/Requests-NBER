@@ -46,6 +46,8 @@ with all the methods of the main `Requests API <http://requests.readthedocs.org/
     
     # Download the bibliographic information.
     >>> biblio = conn.ref(id=doc_id)
+	>>> biblio['doi']
+	'10.3386/t0001'
     >>> biblio['author']
     'Seppo Honkapohja and Takatoshi Ito'
 
