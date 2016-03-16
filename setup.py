@@ -7,13 +7,13 @@ def readme():
         return f.read()
 
 setup(
-    name='requests-aeaweb',
+    name='requests-nber',
     version='0.0.1',
-    description='Requests wrapper to log onto AEAweb.org.',
+    description='Requests wrapper to log onto NBER.org.',
     long_description=readme(),
     author='Erin Hengel',
-    url='http://www.erinhengel.com/software/requests-aeaweb/',
-    packages = ['requests_aeaweb'],
+    url='http://www.erinhengel.com/software/requests-nber/',
+    packages = ['requests_nber'],
     install_requires=['requests>=2.9.1', 'beautifulsoup4>=4.4.1'],
     package_data={'': ['README.rst', 'LICENSE']},
     include_package_data=True,
