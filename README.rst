@@ -6,8 +6,6 @@ Requests-NBER is a custom `Requests <http://requests.readthedocs.org/en/latest/>
 
 Installation
 ------------
-
-*Available soon!*
 	
 .. code-block:: bash
 
