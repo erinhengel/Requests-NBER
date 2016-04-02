@@ -11,26 +11,15 @@ from bibtexparser.bparser import BibTexParser
 from bibtexparser.customization import convert_to_unicode
 
 class Error(Exception):
-    """Base class for exceptions in this module."""
+    """ Base class for exceptions in this module."""
     pass
 
 class NotFoundError(Error):
-    """Exception raised for errors in the input.
-
-    Attributes:
-        expr -- input expression in which the error occurred
-        msg  -- explanation of the error
-    """
-
-    def __init__(self, expr, msg):
-        self.expr = expr
-        self.msg = msg
-    
-    def __str__(self):
-        return repr('{} {}'.format(self.expr, self.msg))
+    """ Exception raised for NBER ids not found. """
+    pass
 
 class NBER(object):
-    """ Creates a custom Requests class to authenticate AEAweb user.
+    """ Creates a custom Requests class to authenticate NBER user.
         Requests Session object stored in session attribute for reuse.
     """
     
@@ -90,7 +79,7 @@ class NBER(object):
             return mypdf
         # If webpage does not exit, return NotFoundError error.
         else:
-            raise NotFoundError(number, 'PDF not found.')
+            raise NotFoundError('PDF for {} not found.'.format(self.number(id=id)))
     
     # Return bibliographic information for document.
     def ref(self, id, published=False, standardised=False):

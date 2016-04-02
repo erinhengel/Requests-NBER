@@ -17,7 +17,7 @@ setup(
     install_requires=['requests>=2.9.1', 'beautifulsoup4>=4.4.1', 'bibtexparser>=0.6.2'],
     package_data={'': ['README.rst', 'LICENSE']},
     include_package_data=True,
-    author_email='erin.hengel@gmail.com',
+    author_email='erin@erinhengel.com',
     license='Apache 2.0',
     zip_safe=False,
 )
