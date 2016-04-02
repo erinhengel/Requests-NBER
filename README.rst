@@ -24,18 +24,18 @@ Quickstart
 ----------
 
 The ``NBER`` class logs onto `NBER.org <https://www.nber.org>`_ and establishes a connection with the host.
-The ``session`` attribute returns a
+Contains a ``session`` attribute that returns a
 `Request Session object <http://requests.readthedocs.org/en/latest/user/advanced/#session-objects>`_
 with all the methods of the main `Requests API <http://requests.readthedocs.org/en/latest/>`_.
 
 
 .. code-block:: python
 
-    >>> from requests_nber import NBER
+    >>> import requests_nber
 	
     # Establish NBER connection object.
     >>> deets = {'username': 'someuser', 'password': 'XXXX'}
-    >>> conn = NBER(login=deets)
+    >>> conn = requests_nber.NBER(login=deets)
 	
     # Download the HTML of the paper with document id t1.
     >>> doc_id = 't1'
